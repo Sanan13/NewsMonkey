@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  min-height: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.myHome{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem;
+}
+.myHome::before{
+  content: '';
+  background: url("./23326.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.myHome h1{
+  font-size: 5rem;
+  text-shadow: 5px 5px 5px #0d457f;
+  color: white;
+}
+
+.myHome h2{
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.myHome h3{
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.myHome p{
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.myText{
+  width: 50%;
+}
+.myButtons{
+  /* margin-top: auto; */
+  position: absolute;
+  margin-top: 30%;
+}
+.myButtons button{
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  width: 10rem;
+  border-radius: 5px;
+  color: white;
+  background: #000521;
+  box-shadow: 3px 3px 6px #1e79cc;
+  transition: all 0.2s;
+}
+.myButtons button:hover{
+  box-shadow: 3px 3px 6px #1e79cc;
+}
+.myButtons button:active{
+  transform: translateX(3px) translateY(3px);
+  box-shadow: 0px 0px 0 black;
+}
+
